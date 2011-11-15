@@ -1,0 +1,748 @@
+body {
+	background-image: url(../images/background.jpg);
+
+	margin: 0;
+}
+
+#header {
+	background-repeat: no-repeat;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	
+}
+
+#header img {
+	/*margin-top: 30px;*/
+	margin: 0;
+	padding: 0;
+}
+
+#header-content{
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+
+}
+
+#header-content img{
+	/*display: block;*/
+	margin-top: 25px;
+
+}
+
+.uiowa-logo{
+	height: 28px;
+
+}
+
+#nav-container {
+	
+	background: url('../images/navigation_background.png');
+	background-repeat:no-repeat;
+	min-height: 95px;
+	
+}
+
+#nav{
+	list-style-type: none;
+	margin-top: 10px;
+	padding: 0;
+	display: block;
+	margin-left: 55px;
+	
+}
+
+#nav ul {
+/*	line-height: 16px;*/
+
+
+
+}
+
+#nav li {
+	float: left;
+	/*width: 15em;*/
+}
+
+#nav li ul {
+	position: absolute;
+	background: #ac1b18;
+	float: none;
+	width: 7em;
+	left: -999em;
+	list-style-type: none;
+	padding: 15px;
+	line-height: 55px;
+}
+
+
+#nav li ul li{
+	float: none;
+	
+}
+
+
+#nav a {
+	display: block;
+	
+}
+
+#nav li:hover ul {
+	left: auto;
+	/*bottom: 2px;*/
+}
+
+#nav li a{
+	/*float: left;*/
+	/*margin: 5px 0;*/
+}
+
+#nav li a span {
+	border-top: 1px solid #ead27e;
+	border-right: 1px solid #ead27e;
+	border-bottom: 1px solid #ead27e;
+	display: block;
+	height: 48px;
+	padding-top: 20px;
+	padding-left: 32px;
+	padding-right: 32px;
+	background: #cda63d; /* Old browsers */
+	background: -moz-linear-gradient(top, #cda63d 0%, #bc9939 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cda63d), color-stop(100%,#bc9939)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cda63d 0%,#bc9939 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cda63d 0%,#bc9939 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #cda63d 0%,#bc9939 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda63d', endColorstr='#bc9939',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #cda63d 0%,#bc9939 100%); /* W3C */
+		
+	
+}
+
+#nav .first{
+
+	border-left: 1px solid #ead27e;
+}
+
+#nav li a.section span, #nav li a.section span:hover, #nav li a.section span:active {
+	background: #bc9939; /* Old browsers */
+	background: -moz-linear-gradient(top, #bc9939 0%, #cda63d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bc9939), color-stop(100%,#cda63d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #bc9939 0%,#cda63d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #bc9939 0%,#cda63d 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #bc9939 0%,#cda63d 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc9939', endColorstr='#cda63d',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #bc9939 0%,#cda63d 100%); /* W3C */
+}
+
+#nav li a:hover span, #nav li a:active span {
+	background: #bc9939; /* Old browsers */
+	background: -moz-linear-gradient(top, #bc9939 0%, #cda63d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bc9939), color-stop(100%,#cda63d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #bc9939 0%,#cda63d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #bc9939 0%,#cda63d 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #bc9939 0%,#cda63d 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc9939', endColorstr='#cda63d',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #bc9939 0%,#cda63d 100%); /* W3C */
+}
+
+#sub-navigation {
+	float: right;
+	background: white;
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	width: 200px;
+}
+
+
+#sub-navigation ul {
+	list-style-type: none;
+}
+
+#sub-navigation li {
+	margin: 0;
+
+}
+
+
+#background-wrapper {
+	background-repeat: repeat;
+
+}
+
+#body-wrapper{
+	width: 1000px;
+	margin: auto;
+	min-height: 400px;
+}
+.clear {
+	clear: both;
+
+}
+.clear-left {
+	clear: left;
+}
+
+#content {
+	width: 962px;
+	margin: auto;
+	min-height: 700px;
+	background: #f5f5f5;
+	/*padding: 40px;*/
+	-webkit-box-shadow: rgb(183, 183, 183) 1px 1px 6px 1px inset;
+	margin-top: -25px;
+	padding-bottom: 50px;
+}
+
+#content img.right {
+	float: right;
+}
+
+#content img.left {
+	float: left;
+}
+
+.featured-student-listing {
+	background: #fafafa;
+	padding: 20px;
+	border: 1px solid #eee;
+	margin-top: 10px;
+}
+
+.featured-student-listing img {
+	margin-left: 10px;
+
+}
+
+#content1 {
+	padding: 20px 40px;
+
+
+}
+
+/*Blog Styles */
+
+#blog-content{
+	width: 600px;
+	float: left;
+
+
+}
+
+#event-content{
+
+
+}
+
+#blog-sidebar{
+	float: left;
+	width: 200px;
+	margin-left: 30px;
+
+}
+
+/* About Page */
+
+#about-social-media {
+	float: right;
+	/*padding: 10px;*/
+	background: #ececec;
+	width: 380px;
+	border: 1px solid #ddd;
+	min-height: 300px;
+	margin-left: 20px;
+
+}
+
+#about-social-media ul {
+	list-style-type: none;
+
+}
+
+#about-social-media li {
+	font-size: 32px;
+	color: #0A88C2;
+	padding: 10px 0;
+
+}
+
+
+#about-content {
+	/*width: 450px; */
+	float: left;
+
+
+}
+
+/* Branch Page */
+
+#branch-intro {
+	border-bottom: 1px solid #ddd;
+
+}
+
+
+#branch-intro p {
+	float: left;
+	width: 450px;
+
+}
+
+#branch-intro img {
+	float: right;
+
+}
+#branch-news {
+	width: 500px;
+	float: left;
+}
+
+#branch-people {
+	float: left;
+	width: 350px;
+	margin-left: 20px;
+}
+
+/* Home Page Styles */
+
+
+#homepage-left-column {
+	width: 500px;
+	float: left;
+}
+
+#homepage-right-column {
+	width: 360px;
+	float: left;
+
+}
+
+
+#homepage-tagline-container {
+	padding: 40px;
+}
+
+#homepage-tagline {
+	float: left;
+	width: 555px;
+}
+
+#tagline-link-container {
+	float: right;
+	padding: 10px;
+}
+
+.tagline-link {
+	width: 250px;
+	display: block;
+	border: 1px solid #d4d4d4;
+	padding: 10px 20px;
+	/* gradient background */
+background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+
+.tagline-link:active {
+
+
+}
+
+.tagline-link span{
+	display: block;
+	text-align: center;
+}
+
+#breadcrumbs {
+	padding: 10px 0;
+
+}
+
+#homepage-feature-container{
+	background: #ececec;
+	border-top: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
+	padding: 20px;
+}
+
+#homepage-social-media {
+	/*margin-top: 60px;*/
+}
+
+#homepage-social-media iframe {
+	margin-top: 30px;
+
+}
+#homepage-features2{
+	margin-top: 30px;
+}
+#homepage-current-initiatives{
+	float: left;
+	width: 500px;
+	background: white;
+}
+
+#homepage-current-initiatives h2 {
+	margin: 0;
+	padding: 0;
+}
+/*#homepage-current-initiatives h2 a, #about-social-media h2, #homepage-featured-student h2 a{*/
+
+.typography .homepage-feature h2, .typography .homepage-feature h2 a, .content-feature h2{
+	display: block;
+	color: #213671;
+	/*text-align: center;*/
+	font-weight: normal;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
+	margin: 0;
+	padding: 0;
+}
+
+.typography .homepage-feature h2 a {
+	padding: 10px;
+
+}
+
+/*#homepage-current-initiatives h2 a:active, .tagline-link:active, #homepage-featured-student h2 a:active{*/
+ .homepage-feature h2 a:active, .tagline-link:active{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e', endColorstr='#5ffffff',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
+}
+
+#homepage-current-initiatives li a:hover {
+
+	background: #334371;
+	color: white;
+
+}
+
+#homepage-current-initiatives li {
+	list-style-type: none;
+	margin: 0;
+}
+
+#homepage-current-initiatives h2 a {
+	margin: 0;
+
+}
+
+#homepage-current-initiatives li a{
+
+	color: #213671;
+	list-style-type: none;
+	display: block;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 5px;
+	margin: 0;
+	background: #f7f7f7;
+
+}
+
+#homepage-current-initiatives li a.last {
+	border-bottom: 1px solid #ddd;
+
+}
+
+#homepage-featured-student {
+	width: 500px;
+	background: white;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+}
+
+#homepage-featured-student img {
+	float: left;
+	margin: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.featured-student-nav {
+	list-style-type: none;
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+	
+}
+
+.typography .featured-student-nav li {
+	list-style-type: none;
+	float: left;
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+#homepage-featured-student-content {
+	padding: 10px;
+}
+
+#homepage-contact-form input, #homepage-contact-form textarea{
+	display: block;
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 22px;
+}
+
+#homepage-contact-form label {
+	font-size: 22px;
+	color: #333;
+
+}
+
+#homepage-contact-form input.action {
+	width: auto;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 10px;
+	color: #213671;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+
+#homepage-contact-form input.action:active {
+	
+		background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e', endColorstr='#5ffffff',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
+}
+
+#homepage-current-initiatives ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+
+#homepage-contact-form {
+	float: left;
+	width: 460px;
+	/*margin-left: 20px;*/
+	background: white;
+	/*padding: 20px;*/
+	border: 1px solid #ddd;
+
+}
+
+#form-container {
+	padding: 20px;
+
+}
+
+#headline-container {
+	padding: 0 20px;
+
+}
+
+#headline-container p{
+	line-height: 20px;
+
+}
+
+#headline-container li {
+	border-bottom: 1px solid #ddd;
+
+}
+
+
+#featured-news {
+	margin-left: 25px;
+	float: left;
+	width: 390px;
+	background: white;
+	border: 1px solid #ddd;
+}
+
+#featured-news h2 a {
+	margin: 0;
+
+}
+
+#featured-news li {
+	margin: 20px 0;
+	list-style-type: none;
+
+}
+
+#featured-news ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+
+#featured-news ul h3 {
+	margin: 0;
+	padding: 0;
+	display: inline;
+
+}
+
+
+
+#slider {
+	float: left;
+	margin-bottom: 50px;
+
+}
+
+.twtr-widget {
+	/*float: left;*/
+	/*margin-left: 20px;*/
+	/*margin-top: 60px;*/
+	display: inline;
+
+}
+.twtr-widget p {
+	font-size: 18px !important;
+
+}
+
+.twtr-widget em {
+	font-size: 16px !important;
+
+}
+
+
+#youtube {
+	width: 480px;
+	float: left;
+}
+
+
+
+#govt-bar{
+	height: 35px;
+	background-image: url('../images/govt_bar_background.png');
+	background-repeat: repeat-x;
+}
+
+/* UISG / ECGPS Global bar-thing */
+
+#govt-bar-content{
+	width: 960px;	
+	margin: auto;
+}
+
+.govt-bar-division{
+	font-family: 'EB Garamond','Garamond', 'Georgia', serif;
+	float: right;
+	color: white;	
+	margin-top: 5px;
+}
+
+.govt-bar-division a{
+	color: white;
+	text-decoration: none;
+} 
+
+a.active-govt-site {	
+color: #c5ab40;
+}
+
+.uiowa-logo {
+	float: left;	
+	
+}
+
+/* Footer stuff */
+
+#footer-content {
+	float: left;
+}
+
+
+
+#footer-content p{
+	line-height: 25px;
+	margin-top: 25px;
+	margin-bottom: 0;
+
+}
+
+#footer-content ul{
+	margin:0;
+	padding:0;
+}
+
+#contact-info{
+	
+}
+
+#footer-content ul li{
+	list-style: none;
+	display: inline;
+	float: left;
+	margin: 0 20px;
+	font-size: 20px;
+
+}
+
+.footer-uiowa {
+	margin-top: 10px;
+
+
+}
+
+#footer {
+	background-color: #1a1a1a;
+	/*min-height: 100px;*/
+	width: 902px;
+	margin: auto;
+	padding: 30px;
+	
+}
+
+#footer-logos {
+float: right;
+}
+
+#footer-logos img {
+	display: block;
+
+}
+
+.blogSummary {
+	border-bottom: 1px solid #ddd;
+	margin: 10px 0;
+
+}
+
+.read-more-link, .readmore {
+	float: right;
+	font-size: 16px;
+}
+
+
