@@ -209,8 +209,9 @@ body {
 .featured-student-listing {
 	background: #fafafa;
 	padding: 20px;
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	margin-top: 10px;
+	background: url(../images/crinkly_bg.png);
 }
 
 .featured-student-listing img {
