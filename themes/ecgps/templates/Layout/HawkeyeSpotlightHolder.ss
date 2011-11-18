@@ -3,7 +3,7 @@
 	<div id="content1">
 	<h1>$Title</h1>
 	<% control Children %>
-		<div class="featured-student-listing">
+		<div class="featured-student-listing" id="$URLSegment">
 			<h2><a href="$Link">$Title</a></h2>
 			<h3>$School</h3>
 			<% if Image %>

@@ -402,7 +402,7 @@ background: #ffffff; /* Old browsers */
 .typography .homepage-feature h2, .typography .homepage-feature h2 a, .content-feature h2{
 	display: block;
 	color: #213671;
-	/*text-align: center;*/
+	text-align: center;
 	font-weight: normal;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
@@ -473,7 +473,7 @@ background: #ffffff; /* Old browsers */
 	width: 500px;
 	background: white;
 	border: 1px solid #ddd;
-	margin: 10px 0;
+	margin-bottom: 10px;
 }
 
 #homepage-featured-student img {
@@ -531,8 +531,7 @@ background: #ffffff; /* Old browsers */
 }
 
 #homepage-contact-form input.action:active {
-	
-		background: #ffffff; /* Old browsers */
+	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */

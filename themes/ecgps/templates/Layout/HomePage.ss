@@ -31,6 +31,27 @@
 		<div id="homepage-feature-container">
 		
 			<div id="homepage-left-column">	
+		<% control RandomPersonProfile %>
+		<div id="homepage-featured-student" class="homepage-feature">
+			<h2><a href="{$BaseHref}hawkeye-spotlight#{$URLSegment}">Hawkeye Spotlight: $Title</a></h2>
+			<div id="homepage-featured-student-content">
+				$Image.SetWidth(150) 
+				
+				<% if PreviewText %>
+				$PreviewText
+				<% else %>
+				$Content.BigSummary(50)	
+				<% end_if %>
+				<div style="clear:left"></div>
+				<ul class="featured-student-nav">
+					<li><a href="$Link">Read more about $Title</a></li>
+					<li><a href="$BaseHref/hawkeye-spotlight">See everyone in the spotlight</a></li>
+				</ul>
+				<div style="clear:left"></div>				
+			</div>
+		</div>
+		<% end_control %>
+
 <% if Children %>
 			<div id="slider" class="nivoSlider theme-pascal">
 			
@@ -60,27 +81,7 @@
 
 			
 		<div style="clear: both"></div>
-		<% control RandomPersonProfile %>
-		<div id="homepage-featured-student" class="homepage-feature">
-			<h2><a href="$Link">Hawkeye Spotlight: $Title</a></h2>
-			<div id="homepage-featured-student-content">
-				$Image.SetWidth(150) 
 				
-				<% if PreviewText %>
-				$PreviewText
-				<% else %>
-				$Content.BigSummary(50)	
-				<% end_if %>
-				<div style="clear:left"></div>
-				<ul class="featured-student-nav">
-					<li><a href="$Link">Read more about $Title</a></li>
-					<li><a href="$BaseHref/hawkeye-spotlight">See everyone in the spotlight</a></li>
-				</ul>
-				<div style="clear:left"></div>				
-			</div>
-		</div>
-		<% end_control %>
-		
 	
 				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script type="text/javascript">
