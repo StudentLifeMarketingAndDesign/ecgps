@@ -173,7 +173,7 @@ line-height: normal;
 
 #nav li { 
 	font-family: 'Rokkit', arial, serif;
-	font-size: 26px;
+	font-size: 24px;
 	text-shadow: 1px 1px 3px #3b3b3b;
 filter: dropshadow(color=#3b3b3b, offx=1, offy=1);
 	text-transform: lowercase;
