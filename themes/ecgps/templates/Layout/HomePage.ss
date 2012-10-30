@@ -31,6 +31,7 @@
 		<div id="homepage-feature-container">
 		
 			<div id="homepage-left-column">	
+		<% if RandomPersonProfile %>
 		<% control RandomPersonProfile %>
 		<div id="homepage-featured-student" class="homepage-feature">
 			<h2><a href="{$BaseHref}hawkeye-spotlight#{$URLSegment}">Hawkeye Spotlight: $Title</a></h2>
@@ -51,6 +52,7 @@
 			</div>
 		</div>
 		<% end_control %>
+		<% end_if %>
 
 <% if Children %>
 			<div id="slider" class="nivoSlider theme-pascal">

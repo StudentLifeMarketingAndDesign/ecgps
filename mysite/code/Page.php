@@ -16,14 +16,17 @@ class Page extends SiteTree {
 	function RandomPersonProfile() {
 		$homepage = DataObject::get_one("HomePage");
 		$persons = DataObject::get("HawkeyeSpotlightPersonPage");
-		$personsArray = $persons->ToArray();
 		
-		if ($homepage->ShowRandomProfile == 1){
-			shuffle($personsArray);
-		}
-		
-		if($personsArray[0]){ 
-			return $personsArray[0];
+		if($persons){
+			$personsArray = $persons->ToArray();
+			
+			if ($homepage->ShowRandomProfile == 1){
+				shuffle($personsArray);
+			}
+			
+			if($personsArray[0]){ 
+				return $personsArray[0];
+			}
 		}
 	}
 

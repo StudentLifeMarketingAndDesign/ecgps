@@ -15,7 +15,7 @@ class HomePageSlider extends Page {
 		$fields = parent::getCMSFields();
 		
 		$fields->removeFieldFromTab('Root.Content.Main', 'Content');
-		$fields->addFieldToTab('Root.Content.Main', new FileAttachmentField('Image','Slider Image (500px x 333px)'));
+		$fields->addFieldToTab('Root.Content.Main', new ImageField('Image','Slider Image (500px x 333px)'));
 		$fields->addFieldToTab('Root.Content.Main', new TextField('Caption', 'Caption'));
 		$fields->addFieldToTab('Root.Content.Main', new TextField('LinkURL', 'Link to this URL'));
 
