@@ -4,7 +4,7 @@
 	
 	
 
-		<div id="BlogContent" class="typography">
+		<div id="BlogContent" class="typography padding">
 			<div id="breadcrumbs"><% include BreadCrumbs %></div>
 			
 			<div class="blogEntry">
@@ -39,4 +39,3 @@
 <!--<% include BlogSideBar %>-->
 </div>
 
-</div>

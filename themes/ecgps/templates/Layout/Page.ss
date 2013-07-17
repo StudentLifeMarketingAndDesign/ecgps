@@ -1,4 +1,4 @@
-<div id="content"  class="typography">
+<div id="content"  class="typography padding">
 
 	<div id="content1">
 	<h1>$Title</h1>
@@ -11,8 +11,6 @@
 					<li><a href="$Link">$MenuTitle</a></li>
 					
 					<% end_control %>
-				
-				
 				</ul>
 			</div>
 		<% end_if %>
@@ -28,9 +26,3 @@
 			
 	
 	</div>
-	
-
-	
-	<div class="clear"></div>
-	
-</div>

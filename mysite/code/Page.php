@@ -17,7 +17,7 @@ class Page extends SiteTree {
 		$homepage = DataObject::get_one("HomePage");
 		$persons = DataObject::get("HawkeyeSpotlightPersonPage");
 		
-		if($persons){
+		if(isset($persons)){
 			$personsArray = $persons->ToArray();
 			
 			if ($homepage->ShowRandomProfile == 1){

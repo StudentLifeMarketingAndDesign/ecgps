@@ -70,7 +70,7 @@
 	color: #4f4f4f;
 	font-weight: bolder;
 	padding: 5px 0;
-	border-bottom: 1px solid #ddd;
+	/*border-bottom: 1px solid #ddd;*/
 	margin: 10px 0;
 
 }
@@ -115,6 +115,7 @@ font-family: 'Rokkit', serif;
 	color: #0a88c2;
 	border-bottom: 1px solid #ddd;
 	font-weight: normal;
+	line-height: normal;
 
 }
 
@@ -280,9 +281,10 @@ color: white;
 #content1 h1 {
 	font-size: 62px;
 	color: #334371;
-	border-bottom: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	margin-bottom: 20px;
 	font-family: 'Rokkit', 'serif';
+	padding-bottom: 10px;
 	
 
 }

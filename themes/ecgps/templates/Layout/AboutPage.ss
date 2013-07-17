@@ -1,4 +1,4 @@
-<div id="content"  class="typography">
+<div id="content"  class="typography padding">
 
 	<div id="content1">
 		<h1>About ECGPS</h1>
@@ -21,4 +21,3 @@
 		
 		$Form
 	</div>
-</div>
