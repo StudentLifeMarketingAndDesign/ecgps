@@ -24,26 +24,6 @@
 	
 		<div id="header-content" class="container">
 				<a href="$BaseURL" class="hidden-phone"><img src="$ThemeDir/images/logo.png" /></a>
-				
-				<!--<div id="nav-container">
-					<ul id="nav">
-						<% control Menu(1) %>
-	
-								<li><a href="$Link" class="{$FirstLast} {$LinkOrSection}"><span>$MenuTitle</span></a>
-									<% if URLSegment = branches %>
-										<ul>
-										<% control Children %>
-											<li><a href="$Link">$MenuTitle</a></li>
-										<% end_control %>
-										</ul>
-									<% end_if %>
-								</li>
-		
-						<% end_control %>
-					</ul>
-				<div class="clear-left"></div>
-	
-				</div>-->
 				<div class="navbar">
 				  <div class="navbar-inner">
 				    <div class="container">
@@ -104,7 +84,7 @@
 					
 					</ul>
 					<div class="clear-left"></div>
-					<p><a href="/#homepage-contact-form">Get a hold of us</a>
+					<p><a href="mailto:ecgps@uiowa.edu">Email us at ecgps@uiowa.edu</a>
 					<br />
 					<!--Phone Number: <strong>319.335.3860</strong>
 					<br />

@@ -75,7 +75,7 @@ body .typography{
 
 .typography h2 {
 	/*font-family: 'Rokkit', serif; */
-	font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
+	font-family: 'Lora', 'Garamond', 'Georgia', serif;
 	font-size: 1.3em;
 	color: #4f4f4f;
 	font-weight: bolder;
@@ -86,7 +86,7 @@ body .typography{
 
 .typography h3, .typography h3 a {
 font-family: 'Rokkit', serif;
-		/*font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;*/
+		/*font-family: 'Lora', 'Garamond', 'Georgia', serif;*/
 	font-size: 1.1em;
 	
 	color: #086793;
@@ -130,7 +130,7 @@ font-family: 'Rokkit', serif;
 }
 
 .typography h2.postTitle  {
-	font-size: 62px;
+	font-size: 1.2em;
 	font-family: 'Rokkit', serif;
 	color: #0a88c2;
 	border-bottom: 1px solid #ddd;
@@ -138,7 +138,11 @@ font-family: 'Rokkit', serif;
 	line-height: normal;
 
 }
-
+@media (min-width: 768px) {
+	.typography h2.postTitle{
+		font-size: 1.8em;
+	}
+}
 .typography .authorDate {
 	font-size: 16px;
 	/*line-height: 5px;*/

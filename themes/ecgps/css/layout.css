@@ -43,18 +43,20 @@ h1, h2, h3, h4 {
 
 
 .navbar-inner{
-	background: #E0B94E;
-	border: 1px solid rgba(238,238,238,0.43);
-	border-radius: 0;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E0B94E',endColorstr='#E0B94E',GradientType=0)
+	
+	background: none;
+	border:none;
+	
 	
 }
+
+
 
 .navbar .nav>li>a {
 	color:#eeeeee;
 	text-shadow:#3B3B3B 1px 1px 3px;
 	text-transform: lowercase;
-	border-bottom: 1px solid rgba(255,255,255,0.57);
+	
 }
 .navbar .nav>li>a:focus, .navbar .nav>li>a:hover {
 	color: white;
@@ -68,10 +70,33 @@ h1, h2, h3, h4 {
 	
 }
 
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+	background: #6a6868;
+}
+
 .navbar .brand {
 	color:#eeeeee;
 	text-shadow:#3B3B3B 1px 1px 3px;
 	
+}
+.navbar .btn-navbar{
+	background: rgba(35,35,35,0.86);
+}
+@media (min-width: 768px) {
+	.navbar-inner{
+		background: #E0B94E;
+		border: 1px solid rgba(238,238,238,0.43);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E0B94E',endColorstr='#E0B94E',GradientType=0)
+	}
+	.navbar .nav>li>a {
+		border-bottom: 1px solid rgba(255,255,255,0.57);
+	}
+	.navbar .btn-navbar{
+		background: #515151;
+	}
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+	background: #6a6868;
+}
 }
 @media (min-width: 960px) {
 	.navbar .nav>li>a {
@@ -87,25 +112,37 @@ h1, h2, h3, h4 {
 	font-size: 1.2em;
 }
 
-/* Old, unused */
+
 #sub-navigation {
-	float:right;
+	
 	background:#fff;
 	border:1px solid #ddd;
-	padding:20px;
-	margin-bottom:20px;
-	margin-left:20px;
-	width:200px;
+	padding:1em;
+
+	
 }
+
+
 
 #sub-navigation ul {
 	list-style-type:none;
+	margin: 0;
 }
 
 #sub-navigation li {
 	margin:0;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 0.3em;
+	margin-bottom: 0.6em;
 }
-
+@media (min-width: 768px) {
+	#sub-navigation {
+		float:right;
+		width:20%;
+		margin-bottom:20px;
+	margin-left:20px;
+	}
+}
 #background-wrapper {
 	background-repeat:repeat;
 }
