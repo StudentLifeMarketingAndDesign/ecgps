@@ -101,10 +101,10 @@ font-family: 'Rokkit', serif;
 
 @media (min-width: 768px) {
 .typography h2 {
-	font-size: 2em;
+	font-size: 1.7em;
 }
 .typography h3 {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	
 }
 }
