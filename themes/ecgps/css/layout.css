@@ -3,12 +3,13 @@ body {
 	background-repeat: repeat-x;
 	background-color: #292929;
 	margin:0;
+	padding: 0;
 }
 h1, h2, h3, h4 {
 	font-weight: normal;
 }
 .padding {
-	padding: 2em;
+	padding: 3.5%;
 }
 
 #header {
@@ -161,8 +162,11 @@ h1, h2, h3, h4 {
 #event-content {
 }
 
-#blog-sidebar {
-
+#blog-sidebar ul li{
+	list-style-type: none;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.3em;
+	margin: 0.3em 0;
 }
 
 /* About Page */
@@ -184,6 +188,17 @@ h1, h2, h3, h4 {
 	font-size:32px;
 	color:#0A88C2;
 	padding:10px 0;
+}
+
+#twitter{ 
+	display: none;
+}
+
+@media (min-width: 768px) {
+	#twitter{
+		display: block;
+	}
+
 }
 
 #about-content {
@@ -271,7 +286,6 @@ h1, h2, h3, h4 {
 }
 
 #breadcrumbs {
-	padding:10px 0;
 }
 
 #homepage-feature-container {
@@ -509,6 +523,7 @@ h1, h2, h3, h4 {
 
 #featured-news h2 a {
 	margin:0;
+	text-shadow: 0 1px 0 white;
 }
 
 #featured-news li {
@@ -587,7 +602,7 @@ a.active-govt-site {
 
 /* Footer stuff */
 #footer-content {
-	float:left;
+
 }
 
 #footer-content p {
@@ -601,16 +616,13 @@ a.active-govt-site {
 	padding:0;
 }
 
-#contact-info {
-}
-@media (min-width: 768px) {
 	#footer-content ul li {
 		list-style:none;
-		display:inline;
-		float:left;
-		margin:0 20px;
-		font-size:20px;
+		margin: 0;
+		padding: 0;
 	}
+
+#contact-info {
 }
 
 
@@ -626,13 +638,25 @@ a.active-govt-site {
 	padding:30px;
 }
 
-#footer-logos {
-	float:right;
-}
 
 #footer-logos img {
 	display:block;
 }
+
+@media (min-width: 768px) {
+	#footer-content ul li {
+
+		display:inline;
+		float:left;
+		margin:0 20px;
+		font-size:20px;
+	}
+	#footer-logos {
+		float:right;
+	}
+
+}
+
 
 .blogSummary {
 	border-bottom:1px solid #ddd;

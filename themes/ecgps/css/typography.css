@@ -1,21 +1,31 @@
 .typography *{
-	font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
+	font-family: 'Lora', 'Garamond', 'Georgia', serif;
 
+}
+
+body .typography{
+	font-size: 1.2em;
+	line-height: normal;
+}
+
+@media (min-width: 768px) {
+	body .typography{
+		font-size: 1.5em;
+	}
 }
 
 
 .typography p {
 	color: #333;
 	margin: 0 0 18px 0;
-	font-size: 18px;
-	line-height: 20px;
 }
 
 .typography li {
 	margin-left: 10px;
-	font-size: 18px;
 	list-style-type: square;
 	/*color: #fef8d3;*/
+	line-height: normal;
+
 
 }
 
@@ -26,7 +36,7 @@
 }
 
 .typography ul {
-	line-height: 25px;
+	line-height: normal;
 	margin-left: 10px;
 	list-style-type: square;
 	list-style: outside;
@@ -65,21 +75,20 @@
 
 .typography h2 {
 	/*font-family: 'Rokkit', serif; */
-		font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
-	font-size: 32px;
+	font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
+	font-size: 1.3em;
 	color: #4f4f4f;
 	font-weight: bolder;
 	padding: 5px 0;
 	/*border-bottom: 1px solid #ddd;*/
 	margin: 10px 0;
-
 }
 
 .typography h3, .typography h3 a {
 font-family: 'Rokkit', serif;
 		/*font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;*/
-
-	font-size: 24px;
+	font-size: 1.1em;
+	
 	color: #086793;
 	padding: 5px 0;
 
@@ -89,6 +98,17 @@ font-family: 'Rokkit', serif;
 	margin: 0;
 
 }
+
+@media (min-width: 768px) {
+.typography h2 {
+	font-size: 2em;
+}
+.typography h3 {
+	font-size: 1.5em;
+	
+}
+}
+
 
 .typography .blogSummary p.authorDate {
 	line-height: 5px;
@@ -136,6 +156,10 @@ font-family: 'Rokkit', serif;
 .typography strong {
 		font-weight: bold;
 		color: #333;
+}
+
+.typography #breadcrumbs {
+	font-size: 0.7em;
 }
 
 #footer a {
@@ -249,7 +273,7 @@ img a {
 #sub-navigation li {
 	font-size: 18px;
 	font-weight: 600;
-	list-style: square;
+	list-style: none;
 	margin-left: 3px;
 
 
@@ -261,9 +285,8 @@ color: white;
 /* Homepage Typography */
 
 .typography #homepage-tagline p{
-	font-size: 32px;
-	line-height: 38px;
-
+	font-size: 1em;
+	line-height: normal;
 }
 
 
@@ -272,14 +295,26 @@ color: white;
 
 }
 
+@media (min-width: 768px) {
+	.typography #homepage-tagline p {
+		font-size:1.7em;
+	}
+}
+
+
 .tagline-link span {
-	font-size: 38px;
+	font-size: 2em;
 	color: #0a88c2;
+	text-shadow: 0 1px 0 #fff;
 
 }
 
+.tagline-link:hover {
+	text-decoration: none;
+}
+
 #content1 h1 {
-	font-size: 62px;
+	font-size: 1.7em;
 	color: #334371;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 20px;
@@ -287,6 +322,12 @@ color: white;
 	padding-bottom: 10px;
 	
 
+}
+
+@media (min-width: 768px) {
+	#content1 h1 {
+		font-size: 2.4em;
+	}
 }
 
 #homepage-contact-form h3 {
@@ -301,8 +342,7 @@ color: white;
 td { 
 	border: 1px solid #ddd;
 	padding: 0 25px;
-	font-size: 16px;
-
+	font-size: 0.7em;
 }
 
 td ul {

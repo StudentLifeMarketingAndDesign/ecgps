@@ -2,6 +2,7 @@
 
 <html lang="$ContentLocale">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<% base_tag %>
 		<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> - $SiteConfig.Title - The University of Iowa</title>
 		$MetaTags(false)
@@ -17,16 +18,7 @@
 	</head>
 	 
 	<body>
-
-	<div id="govt-bar">
-		<div id="govt-bar-content">
-		<a href="http://uiowa.edu/" target="_blank" class="uiowa-logo"><img src="$ThemeDir/images/uiowa.png" /></a>
-		<span class="govt-bar-division"><a href="http://studentlife.uiowa.edu/">Division of Student Life</a>&nbsp; <a href="http://uisg.uiowa.edu">UISG</a> <a class="active-govt-site" href="http://ecgps.uiowa.edu">ECGPS</a></span>
-		
-		<div class="clear"></div>
-		</div>
-	
-	</div>
+	<% include DivisionBar %>
 	<!-- Header -->
 	<div id="header">
 	
@@ -102,8 +94,9 @@
 			<div id="footer" class="typography">
 			
 			
-				<div id="footer-content" class="container">
-				
+				<div id="footer-content" class="container-fluid">
+					<div class="row-fluid">
+					<div class="span9">
 					<ul>
 					<% control Menu(1) %>
 						<li <% if FirstLast %>class="$FirstLast"<% end_if %> ><a href="$Link">$Title</a></li>
@@ -119,28 +112,29 @@
 					<br />-->
 					Our office hours are 10 - 5 every weekday.
 					
-					
-					</div>
+					</p>
+					</div><!-- end span7 -->
+					<div class="span3">
 					<div id="footer-logos">
 					
 						<a href="http://ecgps.uiowa.edu/"><img src="$ThemeDir/images/ecgps_dome_logo.png" /></a>
 						<a href="http://www.uiowa.edu/"><img src="$ThemeDir/images/uiowa.png" class="footer-uiowa" /></a>
 					
 					
+					</div><!-- end footer-logos-->
+					</div><!-- end span5 -->
 					</div>
-					
+					</div>
 					<div class="clear"></div>
 				
 				</div><!-- end footer -->
-			
-			
-			
-			
+
 		</div><!-- end container-->
 		</div> <!-- end body-wrapper -->
 		<div style="clear:both"></div>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="division-bar/js/division-bar.js"></script>
 		<script src="{$ThemeDir}/js/jquery.sticky.js"></script>
 		<script src="themes/bootstrap/js/bootstrap.min.js"></script>
 		<script>
